@@ -28,7 +28,11 @@ theme:
 
 plugins:
   - search
-  - tags
+  - tags:
+      tags_allowed:
+        - data-user
+        - node-operator
+        - developer
   - awesome-nav
 
 markdown_extensions:

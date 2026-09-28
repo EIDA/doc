@@ -1,9 +1,13 @@
 # EIDA Documentation
 
-EIDA, the European Integrated Data Archive, is a federation of data centres
-that archive and distribute seismic waveform data and station metadata. This
-site is the central documentation for people who use that data, run EIDA
-nodes, and build on the EIDA web services.
+This site is the central documentation for EIDA.
+
+> EIDA, an initiative within ORFEUS, is a distributed federation of datacenters
+> established to securely archive seismic waveform data and metadata gathered by
+> European research infrastructures, and provide transparent access to data for
+> the geosciences research communities.
+>
+> — [ORFEUS: European Integrated Data Archive](https://www.orfeus-eu.org/data/eida/)
 
 <div class="grid cards" markdown>
 
@@ -11,24 +15,18 @@ nodes, and build on the EIDA web services.
 
     ---
 
-    Learn what EIDA offers and how to find and download waveforms and metadata.
-
-    [→ What is EIDA?](start-here/what-is-eida.md)
+    [→ For data users](for/data-users.md)
 
 -   **I run a node**
 
     ---
 
-    See how the EIDA services fit together across the federation.
-
-    [→ How the services fit](start-here/how-the-services-fit.md)
+    [→ For node operators](for/node-operators.md)
 
 -   **I build on the APIs**
 
     ---
 
-    Get the vocabulary straight before working with the web service APIs.
-
-    [→ Glossary](start-here/glossary.md)
+    [→ For developers](for/developers.md)
 
 </div>
