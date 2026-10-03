@@ -1,4 +1,3 @@
 nav:
-  - index.md
-  - start-here
-  - for
+  - Home: index.md
+  - tools

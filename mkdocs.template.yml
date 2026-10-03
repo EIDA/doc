@@ -1,0 +1,9 @@
+# Checks that doc_template/ builds when placed in the site, the way a tool's
+# docs are. Run from the repo root:
+#   rm -rf .cache/template-check && mkdir -p .cache/template-check/tools
+#   cp -r doc_template .cache/template-check/tools/example
+#   mkdocs build -f mkdocs.template.yml
+INHERIT: mkdocs.yml
+site_name: Tool docs template check
+docs_dir: .cache/template-check
+site_dir: .cache/template-site

@@ -1,3 +1,9 @@
+---
+hide:
+  - navigation
+  - toc
+---
+
 # EIDA Documentation
 
 This site is the central documentation for EIDA.
@@ -11,22 +17,8 @@ This site is the central documentation for EIDA.
 
 <div class="grid cards" markdown>
 
--   **I want data**
-
-    ---
-
-    [→ For data users](for/data-users.md)
-
--   **I run a node**
-
-    ---
-
-    [→ For node operators](for/node-operators.md)
-
--   **I build on the APIs**
-
-    ---
-
-    [→ For developers](for/developers.md)
+-   [**I want data**](for/data-users.md)
+-   [**I run a node**](for/node-operators.md)
+-   [**I build on the APIs**](for/developers.md)
 
 </div>
