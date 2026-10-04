@@ -1,8 +1,0 @@
-title: Tools
-nav:
-  - Overview: index.md
-  - ws-availability
-  - Routing:
-      - User and Operator documentation: https://routing.readthedocs.io/en/latest/userdoc.html
-      - Specification - v1.2: https://routing.readthedocs.io/en/latest/specification.html
-      - Developer documentation: https://routing.readthedocs.io/en/latest/modules.html

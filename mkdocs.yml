@@ -7,6 +7,9 @@ strict: true
 validation:
   anchors: warn
 
+hooks:
+  - hooks/tools.py
+
 theme:
   name: material
   features:

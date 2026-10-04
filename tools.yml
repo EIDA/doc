@@ -1,0 +1,37 @@
+# The list of tools shown under Tools on the site.
+#
+# scripts/fetch_tools.py reads this file before every build. It copies each
+# tool's docs into docs/tools/<name>/ and writes the Tools sidebar
+# (docs/tools/.nav.yml) and overview table (docs/tools/index.md).
+#
+# A tool is either fetched or linked:
+#
+#   Fetched: its docs folder is copied into this site.
+#     name:        folder name on the site
+#     title:       name shown in the overview table
+#     description: the repository's GitHub description
+#     repo:        GitHub owner/repo
+#     ref:         branch or tag to fetch
+#     path:        docs folder inside the repo
+#
+#   Linked: its docs stay on another site.
+#     name, title, description as above
+#     links:       list of {title: url}, shown in the sidebar
+#
+# Tools are shown in the order listed here.
+
+tools:
+  - name: ws-availability
+    title: ws-availability
+    description: FDSNWS-Availability implementation
+    repo: NikolaosSokos/ws-availability   # change to EIDA/ws-availability once the docs PR is merged
+    ref: docs/template-layout              # change to master once the docs PR is merged
+    path: docs
+
+  - name: routing
+    title: Routing
+    description: Server side application to provide the Routing Service used in EIDA
+    links:
+      - User and Operator documentation: https://routing.readthedocs.io/en/latest/userdoc.html
+      - Specification - v1.2: https://routing.readthedocs.io/en/latest/specification.html
+      - Developer documentation: https://routing.readthedocs.io/en/latest/modules.html
