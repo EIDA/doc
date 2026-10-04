@@ -24,8 +24,8 @@ tools:
   - name: ws-availability
     title: ws-availability
     description: FDSNWS-Availability implementation
-    repo: NikolaosSokos/ws-availability   # change to EIDA/ws-availability once the docs PR is merged
-    ref: docs/template-layout              # change to master once the docs PR is merged
+    repo: EIDA/ws-availability
+    ref: master
     path: docs
 
   - name: routing

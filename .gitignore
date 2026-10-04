@@ -7,3 +7,4 @@ CLAUDE.md
 docs/tools/*/
 docs/tools/.nav.yml
 docs/tools/index.md
+__pycache__/
