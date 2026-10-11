@@ -28,6 +28,13 @@ tools:
     ref: master
     path: docs
 
+  - name: dmtri
+    title: dmtri
+    description: Datacenter Change Trigger is a command-line tool designed to automate actions based on metadata and data changes in seismic datacenters.
+    repo: EIDA/dmtri
+    ref: main
+    path: docs
+
   - name: routing
     title: Routing
     description: Server side application to provide the Routing Service used in EIDA
