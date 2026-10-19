@@ -1,9 +1,7 @@
 ---
 tags:
-  - data-user
-  - node-operator
----
+  - user
 
-# TOOL-NAME: Usage
+# Usage
 
 <!-- Optional page. How to run or query the tool. -->

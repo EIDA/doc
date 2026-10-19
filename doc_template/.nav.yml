@@ -1,8 +1,12 @@
-title: TOOL-NAME
+title: SERVICE NAME
 nav:
   - Overview: index.md
-  - Install: install.md
-  - Usage: usage.md
-  - Configuration: configuration.md
-  - Troubleshooting: troubleshooting.md
-  - Development: development.md
+  - User guide:
+      - Usage: user/usage.md
+      - Troubleshooting: user/troubleshooting.md
+  - Operator:
+      - Install: operator/install.md
+      - Configuration: operator/configuration.md
+      - Troubleshooting: operator/troubleshooting.md
+  - Developer:
+      - Contribute: defelper/contrib.md
