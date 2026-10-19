@@ -13,7 +13,7 @@ cp -r doc_template "$DOCS/tools/single"
 # Tool with several parts: overview at the top, one template copy per part
 mkdir -p "$DOCS/tools/multi"
 cp doc_template/index.md "$DOCS/tools/multi/index.md"
-cat >> "$DOCS/tools/multi/index.md" <<'MD'
+cat >>"$DOCS/tools/multi/index.md" <<'MD'
 
 ## Components
 
@@ -24,7 +24,7 @@ cat >> "$DOCS/tools/multi/index.md" <<'MD'
 MD
 cp -r doc_template "$DOCS/tools/multi/part-one"
 cp -r doc_template "$DOCS/tools/multi/part-two"
-cat > "$DOCS/tools/multi/.nav.yml" <<'NAV'
+cat >"$DOCS/tools/multi/.nav.yml" <<'NAV'
 title: TOOL-NAME
 nav:
   - Overview: index.md
