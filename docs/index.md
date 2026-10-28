@@ -17,8 +17,8 @@ This site is the central documentation for EIDA.
 
 <div class="grid cards" markdown>
 
--   [**I want data**](for/data-users.md)
--   [**I run a node**](for/node-operators.md)
--   [**I build on the APIs**](for/developers.md)
+-   [**End user**](services/users.md){ title="Documentation for end users" }
+-   [**Node operator**](services/operators.md){ title="Documentation for node operators" }
+-   [**Developer**](services/developers.md){ title="Documentation for developers" }
 
 </div>

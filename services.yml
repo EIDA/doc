@@ -1,0 +1,54 @@
+# The list of services shown on the site.
+#
+# scripts/fetch_services.py reads this file before every build. It copies each
+# service's docs into docs/services/<name>/ and writes the site menu
+# (docs/.nav.yml): one tab per role, listing each service's user/, operator/
+# or developer/ folder, with an overview table (docs/services/<tab>.md).
+#
+# A service is either fetched or linked:
+#
+#   Fetched: its docs folder is copied into this site.
+#     name:        folder name on the site
+#     title:       name shown in the overview table
+#     description: based on the repository's GitHub description
+#     repo:        GitHub owner/repo
+#     ref:         branch or tag to fetch
+#     path:        docs folder inside the repo
+#
+#   Linked: its docs stay on another site.
+#     name, title, description as above
+#     links:       list of links, each with:
+#       title:     name shown in the sidebar
+#       url:       where the docs are
+#       roles:     tabs to show it in: user, operator, developer
+#
+# Services are shown in the order listed here.
+
+services:
+  - name: ws-availability
+    title: ws-availability
+    description: FDSNWS-Availability implementation
+    repo: EIDA/ws-availability
+    ref: master
+    path: docs
+
+  - name: dmtri
+    title: dmtri
+    description: Datacenter Change Trigger is a command-line service designed to automate actions based on metadata and data changes in seismic datacenters.
+    repo: EIDA/dmtri
+    ref: main
+    path: docs
+
+  - name: routing
+    title: Routing
+    description: Server side application to provide the Routing Service used in EIDA
+    links:
+      - title: User and Operator documentation
+        url: https://routing.readthedocs.io/en/latest/userdoc.html
+        roles: [user, operator]
+      - title: Specification - v1.2
+        url: https://routing.readthedocs.io/en/latest/specification.html
+        roles: [developer]
+      - title: Developer documentation
+        url: https://routing.readthedocs.io/en/latest/modules.html
+        roles: [developer]

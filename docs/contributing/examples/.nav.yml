@@ -1,4 +1,4 @@
 title: Examples
 nav:
-  - eida-statistics.md
-  - ws-availability.md
+  - eida-statistics: eida-statistics.md
+  - ws-availability: ws-availability.md

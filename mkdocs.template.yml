@@ -1,5 +1,5 @@
 # Used by scripts/check_template.sh to build doc_template/ on its own.
 INHERIT: mkdocs.yml
-site_name: Tool docs template check
+site_name: Service docs template check
 docs_dir: .cache/template-check
 site_dir: .cache/template-site

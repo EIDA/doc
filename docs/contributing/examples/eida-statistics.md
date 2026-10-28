@@ -12,66 +12,47 @@ eida-statistics/
   eida_statsman/          code, unchanged
   webservice/             code, unchanged
   docs/
-    .nav.yml              title: eida-statistics
     index.md              overview + Components
     webservice/           text from webservice/README.md
-      .nav.yml            title: Web service
       index.md
-      install.md
-      usage.md
-      development.md
+      user/usage.md
+      operator/install.md
+      developer/development.md
     eida_statsman/        text from eida_statsman/README.md
-      .nav.yml            title: eida_statsman
       index.md
-      install.md
-      usage.md
+      operator/install.md
+      operator/usage.md
     database/             text from backend_database/README.md
-      .nav.yml            title: Database
       index.md
-      install.md
-      development.md
-```
-
-`docs/.nav.yml`:
-
-```yaml
-title: eida-statistics
-nav:
-  - Overview: index.md
-  - webservice
-  - eida_statsman
-  - database
+      operator/install.md
+      developer/development.md
 ```
 
 ## On the site
 
+Each tab lists the parts that have pages for its role:
+
 ```
-Tools
+Node operators
   eida-statistics
     Overview
-    Web service
-      Overview
+    webservice
       Install
-      Usage
-      Development
     eida_statsman
-      Overview
       Install
       Usage
-    Database
-      Overview
+    database
       Install
-      Development
 ```
 
 ## Components section of `docs/index.md`
 
 | Component | Docs | What it does | For |
 |---|---|---|---|
-| Aggregator | separate repository: [eida-statistics-aggregator](https://github.com/EIDA/eida-statistics-aggregator) | "meant to be deployed on each EIDA node" | node-operator |
-| Centralized statistics web service | `webservice/` | "able to receive logging statistics as provided by the aggregator. It stores the logging statistics in a database." | data-user, developer |
-| Centralized service management tool | `eida_statsman/` | "A command line interface to manage the central database system" | node-operator |
-| Database | `database/` | Containerized PostgreSQL | node-operator |
+| Aggregator | separate repository: [eida-statistics-aggregator](https://github.com/EIDA/eida-statistics-aggregator) | "meant to be deployed on each EIDA node" | operator |
+| Centralized statistics web service | `webservice/` | "able to receive logging statistics as provided by the aggregator. It stores the logging statistics in a database." | user, developer |
+| Centralized service management service | `eida_statsman/` | "A command line interface to manage the central database system" | operator |
+| Database | `database/` | Containerized PostgreSQL | operator |
 
 In the real `docs/index.md`, each folder is a link to that part, for example
 `[Web service](webservice/index.md)`.

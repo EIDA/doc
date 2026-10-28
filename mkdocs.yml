@@ -8,7 +8,7 @@ validation:
   anchors: warn
 
 hooks:
-  - hooks/tools.py
+  - hooks/services.py
 
 theme:
   name: material
@@ -36,8 +36,8 @@ plugins:
   - search
   - tags:
       tags_allowed:
-        - data-user
-        - node-operator
+        - user
+        - operator
         - developer
   - awesome-nav
 
